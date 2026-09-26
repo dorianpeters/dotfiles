@@ -7,6 +7,7 @@
     "eofnewline": true,
     "hlsearch": true,
     "incsearch": true,
+    "linter": true,
     "matchbrace": true,
     "rmtrailingws": true,
     "ruler": true,

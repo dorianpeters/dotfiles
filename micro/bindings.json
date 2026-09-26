@@ -1,4 +1,6 @@
 {
     "F5": "lua:initlua.runpython",
-    "F6": "lua:initlua.runpytest"
+    "F6": "lua:initlua.runpytest",
+    "F7": "lua:initlua.runty",
+    "Alt-f": "lua:initlua.formatPython"
 }

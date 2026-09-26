@@ -8,6 +8,14 @@ This repository contains a streamlined, productive configuration for the [micro]
 
 ### Features & Settings (`micro/settings.json`)
 
+- **Autoformatting with [ruff](https://docs.astral.sh/ruff/)**:
+  - Automatically formats Python files on save with `ruff format`.
+  - Manual formatting on demand via <kbd>Alt</kbd> + <kbd>f</kbd> or `> format` / `> fmt`.
+- **Typechecking & Error Finding with [ty](https://github.com/astral-sh/ty)**:
+  - Integrated into micro's built-in linter engine.
+  - Automatically checks for type mismatches, unresolved references, and syntax errors on save.
+  - Highlights error lines in the gutter and displays diagnostic messages when navigating code.
+  - Full diagnostic summary runnable via <kbd>F7</kbd> or `> check` / `> ty`.
 - **PEP 8 Compliance**:
   - `tabstospaces: true`: Converts tab key presses into spaces.
   - `tabsize: 4`: Enforces standard 4-space Python indentation (avoids `IndentationError` / `TabError`).
@@ -29,11 +37,13 @@ This repository contains a streamlined, productive configuration for the [micro]
 
 | Shortcut / Command | Action | Description |
 | :--- | :--- | :--- |
-| <kbd>F5</kbd> or `> run` | Run Python | Saves the file and executes `python3 <filename>` in an interactive terminal shell (supports `input()`). |
-| <kbd>F6</kbd> or `> test` | Run Tests | Saves the file and executes `pytest <filename>`. |
-| <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save | Saves the current file. |
+| <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save & Autoformat | Saves the file, autoformats using `ruff`, and triggers `ty` checks. |
+| <kbd>Alt</kbd> + <kbd>f</kbd> or `> format` | Format Code | Formats active Python file with `ruff format`. |
+| <kbd>F7</kbd> or `> check` / `> ty` | Typecheck & Errors | Runs `ty check` interactively to show full diagnostic report. |
+| <kbd>F5</kbd> or `> run` / `> python` | Run Python | Saves the file and executes `python3 <filename>` in an interactive terminal shell (supports `input()`). |
+| <kbd>F6</kbd> or `> test` / `> pytest` | Run Tests | Saves the file and executes `pytest <filename>`. |
 | <kbd>Ctrl</kbd> + <kbd>q</kbd> | Quit | Closes current buffer/micro. |
-| <kbd>Ctrl</kbd> + <kbd>e</kbd> | Command Prompt | Opens the micro command bar (type `run`, `test`, `help`, etc.). |
+| <kbd>Ctrl</kbd> + <kbd>e</kbd> | Command Prompt | Opens the micro command bar (type `format`, `check`, `run`, `help`, etc.). |
 | <kbd>Ctrl</kbd> + <kbd>f</kbd> | Find | Searches text in the current buffer. |
 | <kbd>Alt</kbd> + <kbd>/</kbd> or <kbd>Ctrl</kbd> + <kbd>/</kbd> | Toggle Comment | Comments or uncomments the selected line(s) with `#`. |
 
