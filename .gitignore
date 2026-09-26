@@ -1,0 +1,12 @@
+# OS / temporary files
+.DS_Store
+*.swp
+*.bak
+*~
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Micro buffer history
+micro/buffers/

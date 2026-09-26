@@ -1,0 +1,4 @@
+{
+    "F5": "lua:initlua.runpython",
+    "F6": "lua:initlua.runpytest"
+}

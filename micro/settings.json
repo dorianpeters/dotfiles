@@ -1,0 +1,23 @@
+{
+    "autoindent": true,
+    "colorcolumn": 80,
+    "colorscheme": "monokai",
+    "cursorline": true,
+    "diffgutter": true,
+    "eofnewline": true,
+    "hlsearch": true,
+    "incsearch": true,
+    "matchbrace": true,
+    "rmtrailingws": true,
+    "ruler": true,
+    "savecursor": true,
+    "saveundo": true,
+    "smartpaste": true,
+    "tabsize": 4,
+    "tabstospaces": true,
+    "ft:python": {
+        "colorcolumn": 80,
+        "tabsize": 4,
+        "tabstospaces": true
+    }
+}
