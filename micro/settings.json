@@ -14,6 +14,7 @@
     "savecursor": true,
     "saveundo": true,
     "smartpaste": true,
+    "statusformatr": "F5:run F6:test F7:check | Alt-g:keys",
     "tabsize": 4,
     "tabstospaces": true,
     "ft:python": {
